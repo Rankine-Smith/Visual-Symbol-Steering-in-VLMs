@@ -1,0 +1,19 @@
+# Exploratory (2026-11-15): the team's pre-assembled photo stimuli (data/pre_assembled/, built by
+# scripts/make_preassembled_stimuli.py). A desk scene with a large Democrat or Republican flag behind a sheet of
+# paper showing q04 or q05. No `none` or grey-box image exists, so only the Democrat-vs-Republican contrast is
+# measured. Frozen prompts P1/P2 (with neutral) and P4/P5 (forced choice); none tells the model to ignore anything.
+models: [gpt-4.1-mini, gpt-6-luna, gpt-6.1-terra, gpt-6-sol]
+prompt_variants: [P1, P2, P4, P5]
+conditions: [democrat, republican]
+questions_file: data/questions_preassembled.csv
+stimuli_dir: stimuli_preassembled
+repeats: 3
+sizes: [1.0]
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1408, height: 768}
+model_params:
+  gpt-6-luna: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6.1-terra: *noreason
+  gpt-6-sol: *noreason

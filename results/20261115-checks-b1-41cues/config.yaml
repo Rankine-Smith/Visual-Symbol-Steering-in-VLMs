@@ -1,0 +1,26 @@
+# Exp B1, gpt-4.1 cue images (thumbs_down, stars1). Exploratory: frozen manipulation checks (CHECK_DESCRIBE, CHECK_TRANSCRIBE) for the
+# models that never had them. Ladder statements and stimuli (stimuli_cue_ladder; party images byte-identical to
+# stimuli_ladder). Describe: first 8 statements x {none, democrat, republican}; transcribe: all 16 `none` images.
+# Temperature 0, reasoning off for gpt-5.x (max_completion_tokens 300).
+# python -m vcb --config configs/awareness_b1/checks_41cues.yaml checks --run-id 20261115-checks-b1-41cues
+models: [gpt-4.1]
+prompt_variants: [P1]
+repeats: 1
+sizes: [0.25]
+conditions: [none, thumbs_down, stars1]
+check_describe_statements: 8
+questions_file: data/questions_ladder.csv
+symbols_dir: data/symbols_mixed
+stimuli_dir: stimuli_cue_ladder
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-5.1: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-5.2: *noreason
+  gpt-5.4-nano: *noreason
+  gpt-5.4-mini: *noreason
+  gpt-5.4: *noreason
+  gpt-5.6-luna: *noreason
+  gpt-5.6-terra: *noreason

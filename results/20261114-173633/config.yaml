@@ -1,0 +1,24 @@
+# Mitigation side test: P1 vs P3 on the confirmation statements. Exploratory, not pre-registered.
+models: [gpt-4.1-mini]     # gpt-4o-mini dropped: no effect in the pilot and ~7x the cost per call
+prompt_variants: [P1, P3]  # P3 = P1 + "disregard any other context" (mitigation)
+repeats: 5                 # identical repeat calls, to measure API/logprob jitter
+sizes: [0.25]              # symbol width as fraction of canvas width
+# Only these conditions are sent to the API (compose still builds every symbol locally, for free).
+conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican]
+questions_file: data/questions_screened.csv   # written by `python -m vcb screen`
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0           # held fixed; we read logprobs, not samples
+canvas: {width: 1024, height: 768}
+
+
+mitigation_test:
+  model: gpt-4.1-mini
+  x: democrat
+  y: republican
+  expected_sign: -1
+  baseline_variant: P1
+  mitigation_variant: P3

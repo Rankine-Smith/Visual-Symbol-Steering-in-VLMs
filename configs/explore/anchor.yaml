@@ -1,0 +1,22 @@
+# Exploratory (2026-11-14): visual anchoring. Percentage-estimate question in the image, an irrelevant number
+# (14 or 86) on a tag in the corner. Prompts P8/P9 (bins). D = S_anchor14 - S_anchor86; expected negative.
+models: [gpt-6-luna, gpt-4.1-mini]
+prompt_variants: [P8, P9]
+conditions: [none, blank, anchor14, anchor86]
+questions_file: data/questions_estimate.csv
+symbols_dir: data/symbols_anchor
+stimuli_dir: stimuli_anchor
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+model_tests:
+  - {model: gpt-6-luna, x: anchor14, y: anchor86, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-4.1-mini, x: anchor14, y: anchor86, expected_sign: -1, alpha: 0.05}

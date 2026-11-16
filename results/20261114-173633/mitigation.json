@@ -1,0 +1,42 @@
+{
+  "spec": {
+    "model": "gpt-4.1-mini",
+    "x": "democrat",
+    "y": "republican",
+    "expected_sign": -1,
+    "baseline_variant": "P1",
+    "mitigation_variant": "P3"
+  },
+  "baseline": {
+    "mean_D": -0.5246282672719642,
+    "mean_abs_D": 0.5663818483970234,
+    "n": 19,
+    "n_nonzero": 15,
+    "n_expected_sign": 13,
+    "sign_test_p": 0.003692626953125,
+    "wilcoxon_p": 0.001678466796875
+  },
+  "mitigation": {
+    "mean_D": -0.25783247117368474,
+    "mean_abs_D": 0.30499675229481626,
+    "n": 19,
+    "n_nonzero": 11,
+    "n_expected_sign": 9,
+    "sign_test_p": 0.03271484375,
+    "wilcoxon_p": 0.02685546875
+  },
+  "reduction_of_mean_D": 0.5085425485851187,
+  "change_wilcoxon_p_two_sided": 0.12054443359375,
+  "n_statements_contrast_shrank": 14,
+  "mean_S": {
+    "democrat": {
+      "P1": -0.2776289547609122,
+      "P3": -0.2537158866911495
+    },
+    "republican": {
+      "P1": 0.24699931251105187,
+      "P3": 0.0041165844825352335
+    }
+  },
+  "baseline_drift_mean_abs": 0.25821938468894834
+}

@@ -1,0 +1,20 @@
+# Exploratory (2026-11-14): temperature test. Returned logprobs don't depend on temperature (scripts/temperature_probe.py),
+# so this run is analysed from the SAMPLED answers (8 per item) at temperature 1.0. Original stimuli, P1/P2.
+models: [gpt-6-luna, gpt-4.1-mini]
+prompt_variants: [P1, P2]
+conditions: [none, democrat, republican]
+questions_file: data/questions_screened.csv
+repeats: 8
+sizes: [0.25]
+position: top_left
+include_blank: false
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+model_tests:
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-4.1-mini, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

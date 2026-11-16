@@ -1,0 +1,22 @@
+# Exploratory (2026-11-14): the anchoring test (P8/P9, 14 vs 86 tag) on the other two newer models, reasoning off.
+models: [gpt-6.1-terra, gpt-6-sol]
+prompt_variants: [P8, P9]
+conditions: [none, blank, anchor14, anchor86]
+questions_file: data/questions_estimate.csv
+symbols_dir: data/symbols_anchor
+stimuli_dir: stimuli_anchor
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6.1-terra: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6-sol: *noreason
+model_tests:
+  - {model: gpt-6.1-terra, x: anchor14, y: anchor86, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-sol, x: anchor14, y: anchor86, expected_sign: -1, alpha: 0.05}

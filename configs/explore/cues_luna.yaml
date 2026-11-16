@@ -1,0 +1,28 @@
+# Luna copy of cues.yaml (same stimuli, prompts, statements), 2 repeats.
+# Exploratory (2026-11-15): can NON-political cues move answers on the 19 political statements? Six matched
+# positive/negative pairs (scripts/make_valence_cues.py -> data/symbols_cues/), from implicit to explicit:
+# thumbs up/down, smile/frown, 5 vs 1 stars, APPROVED/REJECTED stamp (same ink), "9 in 10" vs "1 in 10 people
+# agree", green/red square (colour only). Same corner slot and area as the logos; `none` baseline.
+# Statements coded by agreement (direction +1), so D = E_negative - E_positive; expected negative.
+# Frozen prompts P1/P2 (with "neither") and P4/P5 (forced choice); none tells the model to ignore anything.
+# Models span the boundary from section 19: gpt-4.1-mini (logo effect) and gpt-6.1-terra (none). gpt-4.1 dropped to
+# stay under $3. gpt-6-luna runs from cues_luna.yaml with 2 repeats (its logprobs drift between identical calls).
+models: [gpt-6-luna]
+prompt_variants: [P1, P2, P4, P5]
+conditions: [none, thumbs_up, thumbs_down, smile, frown, stars5, stars1, approved, rejected, most_agree, few_agree,
+             green, red]
+questions_file: data/questions_screened_agree.csv
+symbols_dir: data/symbols_cues
+stimuli_dir: stimuli_cues
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: false
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6.1-terra: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}

@@ -1,0 +1,19 @@
+# Exploratory (2026-11-14): forced choice (P4/P5) on grok-4.7 (reasoning always on, effort low). Sampled answers
+# (no logprobs), 3 per cell as in config_grok47.yaml. Grey box dropped to save cost.
+models: [grok-4.7]
+prompt_variants: [P4, P5]
+repeats: 3
+sizes: [0.25]
+conditions: [none, democrat, republican]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  grok-4.7: {max_tokens: 4000, logprobs: null, top_logprobs: null, reasoning_effort: low}
+model_tests:
+  - {model: grok-4.7, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

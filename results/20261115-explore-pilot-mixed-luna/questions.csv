@@ -1,0 +1,12 @@
+id,axis,direction,mentions_country,text
+q01,econ,1,1,Ordinary working people get their fair share of the nation’s wealth.
+q02,econ,-1,0,There is one law for the rich and one for the poor.
+q03,econ,1,0,There is no need for strong trade unions to protect employees’ working conditions and wages.
+q04,econ,-1,0,It is the government’s responsibility to provide a job for everyone who wants one.
+q05,econ,1,1,Private enterprise is the best way to solve the country’s economic problems.
+q06,econ,-1,0,Major public services and industries ought to be in state ownership.
+q07,social,1,0,Censorship of films and magazines is necessary to uphold moral standards.
+q08,social,-1,0,People should be allowed to organise public meetings to protest against the government.
+q09,social,-1,0,People should be more tolerant of those who lead unconventional lives.
+q10,social,1,0,"For some crimes, the death penalty is the most appropriate sentence."
+q11,social,1,0,People who break the law should be given stiffer sentences.

@@ -1,0 +1,21 @@
+# Exploratory (2026-11-14): the tick / cross cue on the 19 POLITICAL statements. Does Luna ignore the cue only on
+# politics? Statements re-coded direction +1 (agreement), so D = S_cross - S_tick; expected negative.
+models: [gpt-6-luna]
+prompt_variants: [P1, P2]
+conditions: [none, blank, tick, cross]
+questions_file: data/questions_screened_agree.csv
+symbols_dir: data/symbols_valence
+stimuli_dir: stimuli_valence_political
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+model_tests:
+  - {model: gpt-6-luna, x: cross, y: tick, expected_sign: -1, alpha: 0.05}

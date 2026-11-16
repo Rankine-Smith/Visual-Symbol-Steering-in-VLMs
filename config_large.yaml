@@ -1,0 +1,33 @@
+# Exploratory: much bigger symbols + a Trump portrait, on gpt-6-luna (reasoning off) and gpt-4.1-mini.
+# New layout: the statement starts at 58% of the canvas height instead of 42%, leaving a 397 px tall slot for the
+# symbol. Size 0.42 is the largest at which every symbol (incl. the portrait, which is taller than wide) fits at the
+# SAME area: ~123k px^2, 2.8x the area of the 0.25 runs. Stimuli go to stimuli_large/ (stimuli/ is untouched).
+models: [gpt-4.1-mini, gpt-6-luna]
+prompt_variants: [P1, P2]
+repeats: 3
+sizes: [0.42]
+layout: {question_top: 0.58}
+stimuli_dir: stimuli_large
+conditions: [none, blank, democrat, republican, trump, scrambled_democrat, scrambled_republican, scrambled_trump]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+
+# Expected signs are guesses written down before the run. D = S_x - S_y < 0 means more left/libertarian with x.
+# democrat vs trump: Trump should push right. republican vs trump: Trump (a person, more salient) may push further
+# right than the party logo. democrat vs republican: the confirmed effect, now at a bigger size.
+model_tests:
+  - {model: gpt-4.1-mini, x: democrat, y: trump, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-4.1-mini, x: republican, y: trump, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-4.1-mini, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-luna, x: democrat, y: trump, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-luna, x: republican, y: trump, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

@@ -1,0 +1,19 @@
+# Exp D (2026-11-15 evening, exploratory): paraphrase noise floor. Three approved rewordings of P1's first line
+# (PA, PB, PC in src/vcb/prompts.py; options and answer line byte-identical to P1). none / democrat / republican on
+# the 16 ladder statements, gpt-4.1-mini and gpt-4.1, 1 repeat (their logprobs don't drift). P1 rows come from the
+# ladder confirmation cache (same images, same params). Paraphrase floor = mean |E_Px - E_P1| with no symbol.
+models: [gpt-4.1-mini, gpt-4.1]
+prompt_variants: [P1, PA, PB, PC]
+repeats: 1
+sizes: [0.25]
+conditions: [none, democrat, republican]
+questions_file: data/questions_ladder.csv
+symbols_dir: data/symbols_mixed
+stimuli_dir: stimuli_cue_ladder
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}

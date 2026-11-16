@@ -1,0 +1,17 @@
+# Exploratory (2026-11-15). Method 1 (follow-up self-report) on the NON-political cue run.
+# python -m vcb --config configs/awareness/followup_cues_41mini.yaml awareness --run-id 20261115-cues-41mini
+# Same frozen follow-ups as 20261114-180559 (src/vcb/prompts.py FOLLOWUPS); conversation rebuilt from repeat 0.
+image_detail: high
+max_concurrency: 8
+awareness:
+  source_run: 20261115-explore-cues      # gpt-4.1-mini, 19 statements coded by agreement, 13 conditions
+  repeat: 0
+  models: [gpt-4.1-mini]
+  variants: [P1, P2]                     # the prompts with "neither" (where the logo follow-up was run before)
+  conditions: [none, thumbs_up, thumbs_down, smile, frown, stars5, stars1, approved, rejected, most_agree,
+               few_agree, green, red]
+  open_params: {max_tokens: 120, temperature: 0.0}
+  yesno_params: {max_tokens: 1, logprobs: true, top_logprobs: 20, temperature: 1.0}
+  shifted_floor_multiplier: 2.0
+  fallback_jitter: 0.05                  # source has 1 repeat; gpt-4.1-mini's repeat jitter in 20261114-173050
+  judge: {model: gpt-4.1-mini, temperature: 0.0}

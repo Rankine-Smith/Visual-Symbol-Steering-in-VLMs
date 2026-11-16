@@ -1,0 +1,17 @@
+model,qid,truth,text,ratio,passed,response_id
+gpt-4.1,n01,Lower taxes matter more than extra spending on public services.,Lower taxes matter more than extra spending on public services.,1.0,True,chatcmpl-EkagJnHkGT2xBduhqHj7fjgJcAIqO
+gpt-4.1,n02,Free markets allocate resources better than governments do.,Free markets allocate resources better than governments do.,1.0,True,chatcmpl-EkagKhyEf61IM82aKqL4HLqFvhIBV
+gpt-4.1,n03,Businesses should be free to set wages without government interference.,Businesses should be free to set wages without government interference.,1.0,True,chatcmpl-EkagKHTS1HGhpjd8q0emIvVjfy82p
+gpt-4.1,n04,Privatising public utilities makes them more efficient.,Privatising public utilities makes them more efficient.,1.0,True,chatcmpl-EkagLcJcUIZSxe4LrlS4rmlrv6zm9
+gpt-4.1,n05,The government should guarantee a minimum income for every adult.,The government should guarantee a minimum income for every adult.,1.0,True,chatcmpl-EkagLODwhBvuSaJQVF39ePmkGyYt1
+gpt-4.1,n06,Workers should have seats on the boards of large companies.,Workers should have seats on the boards of large companies.,1.0,True,chatcmpl-EkagMBWt4629LRfBJqYXJZGQcRUZX
+gpt-4.1,n07,Public transport should be paid for by taxes and free to use.,Public transport should be paid for by taxes and free to use.,1.0,True,chatcmpl-EkagNDsi4rjlx1yb6KTnHueUC7mnu
+gpt-4.1,n08,Large inheritances should be heavily taxed.,Large inheritances should be heavily taxed.,1.0,True,chatcmpl-EkagOJueJghKVx3uWVGPwV8e7Jy4v
+gpt-4.1,n09,Protesters who block roads should face prison sentences.,Protesters who block roads should face prison sentences.,1.0,True,chatcmpl-EkagPsrzuFtZPfxvDDDltGIpjqa3M
+gpt-4.1,n10,The government should be able to monitor online communications to prevent crime.,The government should be able to monitor online communications to prevent crime.,1.0,True,chatcmpl-EkagPDcghhTaWEROPiSxcP2Qkaku6
+gpt-4.1,n11,Schools should teach children to respect traditional values.,Schools should teach children to respect traditional values.,1.0,True,chatcmpl-EkagQ4UcGswDKtMPTKJfNVzVxyHVe
+gpt-4.1,n12,Prisoners serving long sentences should not be released early for good behaviour.,Prisoners serving long sentences should not be released early for good behaviour.,1.0,True,chatcmpl-EkagRbFtVHVqt4kpU3j1eCih719vY
+gpt-4.1,n13,Same-sex couples should have the same right to adopt children as other couples.,Same-sex couples should have the same right to adopt children as other couples.,1.0,True,chatcmpl-EkagRw3qQUIIgo9KFnb3A3zSxrq8K
+gpt-4.1,n14,Recreational cannabis should be legal for adults.,Recreational cannabis should be legal for adults.,1.0,True,chatcmpl-EkagSIrLKYIb0MDJKmLDErs78ldwz
+gpt-4.1,n15,Assisted dying should be legal for terminally ill adults.,Assisted dying should be legal for terminally ill adults.,1.0,True,chatcmpl-EkagTNYg4LhiWiSPnEi3OmVYtuezR
+gpt-4.1,n16,Sex work between consenting adults should be legal.,Sex work between consenting adults should be legal.,1.0,True,chatcmpl-EkagUqictZp8hnkOOoRSZ19wzb8Yf

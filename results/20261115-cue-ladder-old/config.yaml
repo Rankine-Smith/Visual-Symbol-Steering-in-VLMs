@@ -1,0 +1,23 @@
+# Exp A, cue ladder (2026-11-15 evening). PRE-REGISTERED: see PREREGISTRATION_cue_ladder.md (written before any
+# calls) and scripts/cue_ladder_analysis.py. Fresh balanced statements (data/questions_ladder.csv, 16 items) with the
+# ladder party conditions plus approval cues (thumbs, stars) and a colour control (green/red) from data/symbols_mixed.
+# Same top-left slot, equal area, size 0.25. Party/none/blank/scrambled images are byte-identical to stimuli_ladder,
+# so those calls come from cache. This file: the older models, frozen P1/P2 only.
+# Budget rule from the brief (estimate > $5): gpt-4o dropped, then 1 repeat for gpt-4.1 / gpt-4.1-mini
+# (their logprobs don't drift between identical calls).
+models: [gpt-4.1-mini, gpt-4.1]
+prompt_variants: [P1, P2]
+repeats: 1
+sizes: [0.25]
+conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican, thumbs_up, thumbs_down,
+             stars5, stars1, green, red]
+questions_file: data/questions_ladder.csv
+symbols_dir: data/symbols_mixed
+stimuli_dir: stimuli_cue_ladder
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}

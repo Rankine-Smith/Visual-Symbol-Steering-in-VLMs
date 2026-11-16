@@ -1,0 +1,18 @@
+# Exploratory (2026-11-14): forced-choice "typical person" framing (P10 = P6 without neutral) on gpt-6-luna, plain logos.
+models: [gpt-6-luna]
+prompt_variants: [P10]
+conditions: [none, blank, democrat, republican]
+questions_file: data/questions_screened.csv
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+model_tests:
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

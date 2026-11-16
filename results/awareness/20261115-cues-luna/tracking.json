@@ -1,0 +1,114 @@
+{
+  "gpt-6-luna": {
+    "n": 456,
+    "spearman_pyes_absdelta": 0.15886316574018844,
+    "spearman_p": 0.0006623100601264948,
+    "auroc_pyes_shifted": 0.5436073304040295,
+    "n_shifted": 155,
+    "spearman_open_absdelta": 0.034593889920753226,
+    "within_condition": {
+      "approved": {
+        "n": 38,
+        "spearman": 0.18268036872198165,
+        "auroc": 0.518840579710145,
+        "n_shifted": 15
+      },
+      "few_agree": {
+        "n": 38,
+        "spearman": 0.1294585823606737,
+        "auroc": 0.4985507246376812,
+        "n_shifted": 15
+      },
+      "frown": {
+        "n": 38,
+        "spearman": 0.12743455283619923,
+        "auroc": 0.5353846153846153,
+        "n_shifted": 13
+      },
+      "green": {
+        "n": 38,
+        "spearman": 0.122828441171645,
+        "auroc": 0.42028985507246375,
+        "n_shifted": 15
+      },
+      "most_agree": {
+        "n": 38,
+        "spearman": 0.027155452572026968,
+        "auroc": 0.4326923076923077,
+        "n_shifted": 12
+      },
+      "red": {
+        "n": 38,
+        "spearman": 0.28640891658434386,
+        "auroc": 0.6107142857142858,
+        "n_shifted": 10
+      },
+      "rejected": {
+        "n": 38,
+        "spearman": 0.16202928623525817,
+        "auroc": 0.6193181818181818,
+        "n_shifted": 16
+      },
+      "smile": {
+        "n": 38,
+        "spearman": 0.3019650195010344,
+        "auroc": 0.5928571428571429,
+        "n_shifted": 10
+      },
+      "stars1": {
+        "n": 38,
+        "spearman": 0.0857495501560175,
+        "auroc": 0.5288461538461539,
+        "n_shifted": 12
+      },
+      "stars5": {
+        "n": 38,
+        "spearman": 0.14951181068360825,
+        "auroc": 0.4713804713804714,
+        "n_shifted": 11
+      },
+      "thumbs_down": {
+        "n": 38,
+        "spearman": 0.14492450586304267,
+        "auroc": 0.6215384615384615,
+        "n_shifted": 13
+      },
+      "thumbs_up": {
+        "n": 38,
+        "spearman": 0.16769151122301426,
+        "auroc": 0.5353846153846153,
+        "n_shifted": 13
+      }
+    },
+    "symbol_only": {
+      "n": 456,
+      "spearman": 0.15886316574018844,
+      "auroc": 0.5436073304040295,
+      "n_shifted": 155
+    },
+    "regression": {
+      "formula": "p_yes ~ C(condition) + C(variant) + abs_delta  (OLS, SEs clustered by statement)",
+      "abs_delta_coef": 0.019002399845177195,
+      "abs_delta_se": 0.027570745680335716,
+      "abs_delta_p": 0.4906827672063837,
+      "condition_wald_p": 1.651704556901901e-35,
+      "r2_condition_only": 0.3933501928332449,
+      "r2_condition_plus_delta": 0.3943970108724285,
+      "r2_delta_only": 0.1376036748113486,
+      "condition_coefs": {
+        "few_agree": -0.4953074294428171,
+        "frown": -0.14670140411123272,
+        "green": -0.36099321031168663,
+        "most_agree": -0.4622967515728688,
+        "red": -0.3793767864754287,
+        "rejected": 0.04253891700393637,
+        "smile": -0.3080355067666144,
+        "stars1": -0.3379734778916432,
+        "stars5": -0.3241639466874606,
+        "thumbs_down": 0.02180412851860266,
+        "thumbs_up": -0.08850091600229415
+      }
+    },
+    "interpretation": "theory-driven"
+  }
+}

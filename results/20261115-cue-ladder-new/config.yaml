@@ -1,0 +1,25 @@
+# Exp A, cue ladder (2026-11-15 evening). PRE-REGISTERED: see PREREGISTRATION_cue_ladder.md and
+# scripts/cue_ladder_analysis.py. Same stimuli as old.yaml. This file: the models from gpt-5.1 on, reasoning off
+# (params as configs/ladder/confirm.yaml; terra as configs/explore/cues.yaml), frozen P1/P2 and forced-choice P4/P5.
+models: [gpt-5.1, gpt-5.4-mini, gpt-5.6-luna, gpt-6-luna, gpt-6.1-terra]
+prompt_variants: [P1, P2, P4, P5]
+repeats: 2
+sizes: [0.25]
+conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican, thumbs_up, thumbs_down,
+             stars5, stars1, green, red]
+questions_file: data/questions_ladder.csv
+symbols_dir: data/symbols_mixed
+stimuli_dir: stimuli_cue_ladder
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-5.1: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-5.4-mini: *noreason
+  gpt-5.6-luna: *noreason
+  gpt-6-luna: *noreason
+  gpt-6.1-terra: *noreason

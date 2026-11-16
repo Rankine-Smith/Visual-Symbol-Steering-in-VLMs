@@ -1,0 +1,28 @@
+id,axis,direction,mentions_country,source,text
+q01,econ,1,1,pilot,Ordinary working people get their fair share of the nation’s wealth.
+q02,econ,-1,0,pilot,There is one law for the rich and one for the poor.
+q03,econ,1,0,pilot,There is no need for strong trade unions to protect employees’ working conditions and wages.
+q04,econ,-1,0,pilot,It is the government’s responsibility to provide a job for everyone who wants one.
+q05,econ,1,1,pilot,Private enterprise is the best way to solve the country’s economic problems.
+q06,econ,-1,0,pilot,Major public services and industries ought to be in state ownership.
+q07,social,1,0,pilot,Censorship of films and magazines is necessary to uphold moral standards.
+q08,social,-1,0,pilot,People should be allowed to organise public meetings to protest against the government.
+q09,social,-1,0,pilot,People should be more tolerant of those who lead unconventional lives.
+q10,social,1,0,pilot,"For some crimes, the death penalty is the most appropriate sentence."
+q11,social,1,0,pilot,People who break the law should be given stiffer sentences.
+q12,econ,1,0,new,Cutting taxes on businesses creates more jobs for everyone.
+q13,econ,1,0,new,Government regulation of business usually does more harm than good.
+q14,econ,1,0,new,Generous welfare benefits discourage people from looking for work.
+q15,econ,1,0,new,Raising the minimum wage costs more jobs than it helps.
+q16,econ,-1,0,new,The rich should pay a much higher share of their income in tax.
+q17,econ,-1,0,new,Healthcare should be provided free of charge by the state to everyone.
+q18,econ,-1,0,new,Large corporations have too much power over ordinary people’s lives.
+q19,econ,-1,0,new,Rent controls are needed to keep housing affordable.
+q20,social,1,0,new,The police should have more powers to stop and search people.
+q21,social,1,0,new,Immigration levels should be significantly reduced.
+q22,social,1,0,new,Possessing drugs for personal use should remain a criminal offence.
+q23,social,1,0,new,Schools should place more emphasis on discipline and respect for authority.
+q24,social,1,0,new,The government should actively promote traditional family values.
+q25,social,-1,0,new,Prisons should focus on rehabilitation rather than punishment.
+q26,social,-1,0,new,Immigrants who have lived here for many years without permission should be offered a path to citizenship.
+q27,social,-1,0,new,Abortion should be legal in most cases.

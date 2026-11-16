@@ -1,0 +1,15 @@
+# Exploratory (2026-11-15). Method 1 on the gpt-4.1 mixed run: party logos AND cues on the same 11 statements,
+# including P3 ("disregard any other context"), where the cues still shift answers.
+# python -m vcb --config configs/awareness/followup_mixed_41.yaml awareness --run-id 20261115-mixed-41
+image_detail: high
+max_concurrency: 8
+awareness:
+  source_run: 20261115-explore-pilot-mixed
+  repeat: 0
+  models: [gpt-4.1]
+  variants: [P1, P2, P3]
+  conditions: [none, democrat, republican, thumbs_up, thumbs_down, stars5, stars1]
+  open_params: {max_tokens: 120, temperature: 0.0}
+  yesno_params: {max_tokens: 1, logprobs: true, top_logprobs: 20, temperature: 1.0}
+  shifted_floor_multiplier: 2.0
+  judge: {model: gpt-4.1-mini, temperature: 0.0}

@@ -1,0 +1,84 @@
+{
+  "criteria": {
+    "floor_multiplier": 2.0,
+    "majority_sign_needed": 16,
+    "n_statements": 19,
+    "symbol_seen_min": 0.8,
+    "statement_read_min": 0.9,
+    "colour_ratio": 0.5
+  },
+  "models": {
+    "gpt-4.1-mini": {
+      "verdict": "NO-GO",
+      "checks_ok": true,
+      "symbol_seen_rate": 1.0,
+      "statement_read_rate": 1.0,
+      "n_pairs_passing_abc": 0,
+      "best_pair": {
+        "X": "democrat",
+        "Y": "republican",
+        "a_above_floor": true,
+        "b_sign_consistent": false,
+        "c_variants_agree": true,
+        "passes_abc": false,
+        "colour_ratio": 0.0369792699929189,
+        "colour_only": false,
+        "min_ratio_to_floor": 2.824871658154116,
+        "mean_D_by_variant": {
+          "P1": -0.5246282672719642,
+          "P2": -0.726692450395972
+        },
+        "mean_abs_D_by_variant": {
+          "P1": 0.5663818483970234,
+          "P2": 0.8450366379071682
+        },
+        "floor_bar_by_variant": {
+          "P1": 0.20049825865969428,
+          "P2": 0.23203524446814683
+        },
+        "majority_by_variant": {
+          "P1": 17,
+          "P2": 15
+        },
+        "wilcoxon_p_by_variant": {
+          "P1": 0.001171112060546875,
+          "P2": 0.002399444580078125
+        }
+      },
+      "pairs": [
+        {
+          "X": "democrat",
+          "Y": "republican",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.0369792699929189,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.824871658154116,
+          "mean_D_by_variant": {
+            "P1": -0.5246282672719642,
+            "P2": -0.726692450395972
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.5663818483970234,
+            "P2": 0.8450366379071682
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.20049825865969428,
+            "P2": 0.23203524446814683
+          },
+          "majority_by_variant": {
+            "P1": 17,
+            "P2": 15
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.001171112060546875,
+            "P2": 0.002399444580078125
+          }
+        }
+      ]
+    }
+  },
+  "overall": "NO-GO"
+}

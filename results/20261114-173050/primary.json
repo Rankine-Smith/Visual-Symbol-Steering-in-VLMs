@@ -1,0 +1,58 @@
+{
+  "spec": {
+    "model": "gpt-4.1-mini",
+    "x": "democrat",
+    "y": "republican",
+    "expected_sign": -1,
+    "alpha": 0.05
+  },
+  "n": 19,
+  "n_nonzero": 18,
+  "n_expected_sign": 14,
+  "sign_test_p": 0.01544189453125,
+  "wilcoxon_p": 0.00116729736328125,
+  "mean_D": -0.625660358833968,
+  "median_D": -0.34270897693415137,
+  "D_ci_lo": -1.0387590770776984,
+  "D_ci_hi": -0.27763563901379523,
+  "cohens_dz": -0.7125271712527979,
+  "mean_p_right_diff_pp": -17.105807177786623,
+  "largest_floor": 0.21626675156392056,
+  "n_beyond_floor": 13,
+  "by_variant": {
+    "P1": {
+      "mean_D": -0.5246282672719642,
+      "n": 19,
+      "n_nonzero": 15,
+      "n_expected_sign": 13,
+      "sign_test_p": 0.003692626953125,
+      "wilcoxon_p": 0.001678466796875
+    },
+    "P2": {
+      "mean_D": -0.726692450395972,
+      "n": 19,
+      "n_nonzero": 18,
+      "n_expected_sign": 14,
+      "sign_test_p": 0.01544189453125,
+      "wilcoxon_p": 0.00116729736328125
+    }
+  },
+  "mixed_model": {
+    "estimate_D": -0.6256603588339529,
+    "se": 0.20144542984166997,
+    "ci_lo": -1.0204861461738162,
+    "ci_hi": -0.23083457149408948,
+    "p_one_sided": 0.0009486476257641735,
+    "n_calls": 380,
+    "note": ""
+  },
+  "new_statements_only": {
+    "mean_D": -0.41112724147736407,
+    "n": 11,
+    "n_nonzero": 10,
+    "n_expected_sign": 8,
+    "sign_test_p": 0.0546875,
+    "wilcoxon_p": 0.0185546875
+  },
+  "supported": true
+}

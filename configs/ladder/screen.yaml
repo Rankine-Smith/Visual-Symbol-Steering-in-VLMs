@@ -1,0 +1,37 @@
+# Model ladder, stage 1 SCREEN (exploratory, 2026-11-15). Where along the OpenAI model line does the corner-logo
+# effect disappear? Main-experiment stimuli (corner logo, size 0.25), statements and frozen prompts:
+# P1/P2 (the main prompts) and P3 (P1 + "disregard any other context", approved 2026-11-14 as a side test).
+# One repeat: logprob scoring, so repeat jitter is tiny (SD ~0.05 in earlier runs). Reasoning off everywhere.
+# gpt-4o-mini, gpt-4.1-mini and the gpt-6 models reuse cached calls where params match earlier runs.
+# gpt-5.5 and gpt-5.6-sol held back (most expensive; gpt-6-sol above them already shows nothing): screened only
+# if the effect is still present at gpt-5.4 / gpt-5.6-terra.
+# Screening rule, fixed BEFORE the run: per model, D_q = (E_democrat - E_republican) * direction averaged over
+# P1 and P2, one value per statement. A model is a CANDIDATE if mean D < 0 and the one-sided Wilcoxon across the
+# 19 statements gives p < 0.10. P3 is scored the same way on its own. Candidates go to stage 2 (confirmation).
+models: [gpt-4o-mini, gpt-4o, gpt-4.1-mini, gpt-4.1, gpt-5.1, gpt-5.2, gpt-5.4-nano, gpt-5.4-mini, gpt-5.4,
+         gpt-5.6-luna, gpt-5.6-terra, gpt-6-luna, gpt-6.1-terra, gpt-6-sol]
+prompt_variants: [P1, P2, P3]
+repeats: 1
+sizes: [0.25]
+conditions: [none, democrat, republican]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-5.1: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-5.2: *noreason
+  gpt-5.4-nano: *noreason
+  gpt-5.4-mini: *noreason
+  gpt-5.4: *noreason
+  gpt-5.5: *noreason
+  gpt-5.6-luna: *noreason
+  gpt-5.6-terra: *noreason
+  gpt-5.6-sol: *noreason
+  gpt-6-luna: *noreason
+  gpt-6.1-terra: *noreason
+  gpt-6-sol: *noreason

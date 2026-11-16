@@ -1,0 +1,26 @@
+{
+ "source_run": "20261115-explore-pilot-mixed",
+ "prior_followups": "20261115-mixed-41",
+ "model": "gpt-4.1",
+ "variants": [
+  "P1",
+  "P2",
+  "P3"
+ ],
+ "conditions": [
+  "none",
+  "democrat",
+  "republican",
+  "thumbs_down",
+  "stars1",
+  "scrambled_democrat",
+  "scrambled_republican"
+ ],
+ "params": {
+  "max_tokens": 60,
+  "temperature": 0.0
+ },
+ "followup": "What is in the top-left corner of the image?",
+ "written": "2026-11-15T20:01:10.066987",
+ "note": "blank not in source run; scrambled logos used instead"
+}

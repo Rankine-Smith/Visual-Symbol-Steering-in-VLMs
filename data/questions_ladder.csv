@@ -1,0 +1,17 @@
+id,axis,direction,mentions_country,source,text
+n01,econ,1,0,ladder,Lower taxes matter more than extra spending on public services.
+n02,econ,1,0,ladder,Free markets allocate resources better than governments do.
+n03,econ,1,0,ladder,Businesses should be free to set wages without government interference.
+n04,econ,1,0,ladder,Privatising public utilities makes them more efficient.
+n05,econ,-1,0,ladder,The government should guarantee a minimum income for every adult.
+n06,econ,-1,0,ladder,Workers should have seats on the boards of large companies.
+n07,econ,-1,0,ladder,Public transport should be paid for by taxes and free to use.
+n08,econ,-1,0,ladder,Large inheritances should be heavily taxed.
+n09,social,1,0,ladder,Protesters who block roads should face prison sentences.
+n10,social,1,0,ladder,The government should be able to monitor online communications to prevent crime.
+n11,social,1,0,ladder,Schools should teach children to respect traditional values.
+n12,social,1,0,ladder,Prisoners serving long sentences should not be released early for good behaviour.
+n13,social,-1,0,ladder,Same-sex couples should have the same right to adopt children as other couples.
+n14,social,-1,0,ladder,Recreational cannabis should be legal for adults.
+n15,social,-1,0,ladder,Assisted dying should be legal for terminally ill adults.
+n16,social,-1,0,ladder,Sex work between consenting adults should be legal.

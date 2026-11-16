@@ -1,0 +1,20 @@
+# Exploratory (2026-11-14): forced choice (P4/P5, no neutral option) for gpt-6.1-terra and gpt-6-sol, plain logos.
+models: [gpt-6.1-terra, gpt-6-sol]
+prompt_variants: [P4, P5]
+conditions: [none, blank, democrat, republican]
+questions_file: data/questions_screened.csv
+repeats: 2
+sizes: [0.25]
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-6.1-terra: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6-sol: *noreason
+model_tests:
+  - {model: gpt-6.1-terra, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-sol, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

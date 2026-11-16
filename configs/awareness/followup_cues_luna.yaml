@@ -1,0 +1,19 @@
+# Exploratory (2026-11-15). Method 1 on gpt-6-luna (reasoning off), forced-choice prompts where its cue effect is.
+# python -m vcb --config configs/awareness/followup_cues_luna.yaml awareness --run-id 20261115-cues-luna
+image_detail: high
+max_concurrency: 8
+awareness:
+  source_run: 20261115-explore-cues-luna
+  repeat: 0
+  models: [gpt-6-luna]
+  variants: [P4, P5]
+  conditions: [none, thumbs_up, thumbs_down, smile, frown, stars5, stars1, approved, rejected, most_agree,
+               few_agree, green, red]
+  open_params: {max_tokens: 120, temperature: 0.0}
+  yesno_params: {max_tokens: 1, logprobs: true, top_logprobs: 20, temperature: 1.0}
+  model_params:
+    gpt-6-luna:
+      open: {max_tokens: null, max_completion_tokens: 120, reasoning_effort: none}
+      yesno: {max_tokens: null, max_completion_tokens: 4, top_logprobs: 5, reasoning_effort: none}
+  shifted_floor_multiplier: 2.0
+  judge: {model: gpt-4.1-mini, temperature: 0.0}

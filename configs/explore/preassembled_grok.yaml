@@ -1,0 +1,16 @@
+# Exploratory (2026-11-15): same pre-assembled photo stimuli as preassembled_openai.yaml, on Grok (no logprobs:
+# each call is one sampled answer at temperature 1.0, 5 samples per image x prompt).
+models: [grok-4.20-0309-non-reasoning, grok-4.7]
+prompt_variants: [P1, P2, P4, P5]
+conditions: [democrat, republican]
+questions_file: data/questions_preassembled.csv
+stimuli_dir: stimuli_preassembled
+repeats: 5
+sizes: [1.0]
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1408, height: 768}
+model_params:
+  grok-4.20-0309-non-reasoning: {max_tokens: 16, logprobs: null, top_logprobs: null}
+  grok-4.7: {max_tokens: 4000, logprobs: null, top_logprobs: null, reasoning_effort: low}

@@ -1,0 +1,7 @@
+id,axis,direction,mentions_country,source,text
+q02,econ,-1,0,pilot,There is one law for the rich and one for the poor.
+q04,econ,-1,0,pilot,It is the government’s responsibility to provide a job for everyone who wants one.
+q05,econ,1,1,pilot,Private enterprise is the best way to solve the country’s economic problems.
+q06,econ,-1,0,pilot,Major public services and industries ought to be in state ownership.
+q19,econ,-1,0,new,Rent controls are needed to keep housing affordable.
+q27,social,-1,0,new,Abortion should be legal in most cases.

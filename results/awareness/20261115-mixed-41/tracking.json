@@ -1,0 +1,72 @@
+{
+  "gpt-4.1": {
+    "n": 198,
+    "spearman_pyes_absdelta": 0.44794428907961403,
+    "spearman_p": 3.661842802471236e-11,
+    "auroc_pyes_shifted": 0.7087671232876712,
+    "n_shifted": 73,
+    "spearman_open_absdelta": 0.40885398334339396,
+    "within_condition": {
+      "democrat": {
+        "n": 33,
+        "spearman": 0.3697393108853536,
+        "auroc": 0.4340659340659341,
+        "n_shifted": 7
+      },
+      "republican": {
+        "n": 33,
+        "spearman": 0.32935861476168754,
+        "auroc": 0.6726190476190477,
+        "n_shifted": 12
+      },
+      "stars1": {
+        "n": 33,
+        "spearman": 0.5147058823529412,
+        "auroc": 0.8512396694214877,
+        "n_shifted": 22
+      },
+      "stars5": {
+        "n": 33,
+        "spearman": 0.20020053475935828,
+        "auroc": 0.46153846153846156,
+        "n_shifted": 7
+      },
+      "thumbs_down": {
+        "n": 33,
+        "spearman": 0.6828208556149733,
+        "auroc": 0.8270676691729323,
+        "n_shifted": 19
+      },
+      "thumbs_up": {
+        "n": 33,
+        "spearman": 0.08622994652406417,
+        "auroc": 0.3950617283950617,
+        "n_shifted": 6
+      }
+    },
+    "symbol_only": {
+      "n": 198,
+      "spearman": 0.44794428907961403,
+      "auroc": 0.7087671232876712,
+      "n_shifted": 73
+    },
+    "regression": {
+      "formula": "p_yes ~ C(condition) + C(variant) + abs_delta  (OLS, SEs clustered by statement)",
+      "abs_delta_coef": 0.14027158208577617,
+      "abs_delta_se": 0.016192757842323255,
+      "abs_delta_p": 4.610746986431588e-18,
+      "condition_wald_p": 0.002001077116574408,
+      "r2_condition_only": 0.2997173839381678,
+      "r2_condition_plus_delta": 0.4434812935734517,
+      "r2_delta_only": 0.33890137230912964,
+      "condition_coefs": {
+        "republican": -0.006813505389092768,
+        "stars1": 0.06509283401862244,
+        "stars5": 0.011879385308186774,
+        "thumbs_down": 0.27948667075292527,
+        "thumbs_up": 0.01520416270869341
+      }
+    },
+    "interpretation": "both"
+  }
+}

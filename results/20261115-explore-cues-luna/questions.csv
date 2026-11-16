@@ -1,0 +1,20 @@
+id,axis,direction,mentions_country,source,text
+q01,agree,1,1,pilot,Ordinary working people get their fair share of the nation’s wealth.
+q02,agree,1,0,pilot,There is one law for the rich and one for the poor.
+q04,agree,1,0,pilot,It is the government’s responsibility to provide a job for everyone who wants one.
+q05,agree,1,1,pilot,Private enterprise is the best way to solve the country’s economic problems.
+q06,agree,1,0,pilot,Major public services and industries ought to be in state ownership.
+q07,agree,1,0,pilot,Censorship of films and magazines is necessary to uphold moral standards.
+q10,agree,1,0,pilot,"For some crimes, the death penalty is the most appropriate sentence."
+q11,agree,1,0,pilot,People who break the law should be given stiffer sentences.
+q12,agree,1,0,new,Cutting taxes on businesses creates more jobs for everyone.
+q13,agree,1,0,new,Government regulation of business usually does more harm than good.
+q14,agree,1,0,new,Generous welfare benefits discourage people from looking for work.
+q15,agree,1,0,new,Raising the minimum wage costs more jobs than it helps.
+q19,agree,1,0,new,Rent controls are needed to keep housing affordable.
+q20,agree,1,0,new,The police should have more powers to stop and search people.
+q21,agree,1,0,new,Immigration levels should be significantly reduced.
+q22,agree,1,0,new,Possessing drugs for personal use should remain a criminal offence.
+q23,agree,1,0,new,Schools should place more emphasis on discipline and respect for authority.
+q24,agree,1,0,new,The government should actively promote traditional family values.
+q27,agree,1,0,new,Abortion should be legal in most cases.

@@ -1,0 +1,33 @@
+# Awareness phase (exploratory): does the model know it was influenced?
+# Method 1 (`python -m vcb --config config_awareness.yaml awareness`) and
+# Method 3 (`python -m vcb --config config_awareness.yaml reasoning`).
+image_detail: high
+max_concurrency: 8
+
+awareness:
+  source_run: 20261114-173050        # confirmation run: gpt-4.1-mini, P1+P2, 19 statements, 6 conditions
+  repeat: 0                          # one follow-up conversation per opinion call (repeat 0)
+  open_params: {max_tokens: 120, temperature: 0.0}
+  yesno_params: {max_tokens: 1, logprobs: true, top_logprobs: 20, temperature: 1.0}
+  shifted_floor_multiplier: 2.0      # "shifted" = |Delta| > 2 x repeat-jitter floor
+  judge: {model: gpt-4.1-mini, temperature: 0.0}
+
+reasoning:
+  # Cheapest OpenAI reasoning model with image input whose reasoning summaries our key can access
+  # (probe 2026-11-14). $0.05 / $0.005 / $0.40 per 1M tokens (developers.openai.com/api/docs/pricing).
+  # Effort `low` returned an empty summary in the probe; `medium` returned one.
+  model: gpt-5-nano
+  effort: medium
+  summary: auto
+  max_output_tokens: 4000
+  samples: 8
+  prompt_variants: [P1]
+  sizes: [0.25]
+  conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican]
+  questions_file: data/questions_screened.csv   # same 19 statements as the confirmation run
+  contrast: {x: democrat, y: republican, expected_sign: -1}
+  lean: {democrat: -1, republican: 1}           # direction each symbol is expected to push (+ = right)
+  compare_run: 20261114-173050
+  judge: {model: gpt-4.1-mini, temperature: 0.0}
+  handcheck_n: 30
+  handcheck_seed: 0

@@ -1,0 +1,28 @@
+# Exploratory: do newer models show the Democrat vs Republican logo effect with reasoning OFF?
+# Same stimuli, statements, conditions and prompts as the confirmation run (config.yaml); fewer repeats.
+models: [gpt-6-luna, gpt-6.1-terra, gpt-6-sol]   # cheap / mid / near-flagship ($0.10, $1, $2 per 1M input)
+prompt_variants: [P1, P2]
+repeats: 2
+sizes: [0.25]
+conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+
+# Reasoning off. These models cap top_logprobs at 5 (enough: 5 answer letters) and refuse max_tokens=1,
+# so we allow 16 completion tokens and still score only the first output token. Probe 2026-11-14:
+# 0 reasoning tokens, a single letter, option mass >= 0.99.
+model_params:
+  gpt-6-luna: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6.1-terra: *noreason
+  gpt-6-sol: *noreason
+
+model_tests:
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6.1-terra, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-sol, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

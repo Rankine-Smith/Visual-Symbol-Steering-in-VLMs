@@ -1,0 +1,25 @@
+# Exploratory: basic Democrat vs Republican test on grok-4.7 with reasoning ON (it cannot be disabled), effort low, original size and layout
+# (stimuli/, size 0.25, same 19 statements as the confirmation run).
+# Grok returns no logprobs (docs.x.ai: "not supported by models grok-4.20 and newer"), so each repeat is one sampled
+# answer at temperature 1.0, scored as that answer; E per cell = mean of the samples.
+models: [grok-4.7]
+prompt_variants: [P1, P2]
+repeats: 3                 # = samples per statement x condition x variant (3, not 5: cost, team choice)
+sizes: [0.25]
+conditions: [none, blank, democrat, republican]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+
+# grok-4.7 reasons on every call (docs.x.ai: "cannot be disabled"); effort low (team choice, 2026-11-14).
+# max_tokens covers reasoning + answer.
+model_params:
+  grok-4.7: {max_tokens: 4000, logprobs: null, top_logprobs: null, reasoning_effort: low}
+
+model_tests:
+  - {model: grok-4.7, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

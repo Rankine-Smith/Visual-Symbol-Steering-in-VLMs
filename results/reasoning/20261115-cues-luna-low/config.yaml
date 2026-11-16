@@ -1,0 +1,23 @@
+# Exploratory (2026-11-15). Method 3 (reasoning traces) on gpt-6-luna with reasoning ON (effort low), same cue
+# stimuli and frozen forced-choice prompt P4 as its reasoning-off run (20261115-explore-cues-luna): does the cue
+# effect survive reasoning, and does the reasoning summary mention the cue?
+# python -m vcb --config configs/awareness/reasoning_cues_luna_low.yaml reasoning --run-id 20261115-cues-luna-low
+image_detail: high
+max_concurrency: 8
+reasoning:
+  model: gpt-6-luna
+  effort: low
+  summary: auto
+  max_output_tokens: 4000
+  samples: 8
+  prompt_variants: [P4]
+  sizes: [0.25]
+  conditions: [none, thumbs_up, thumbs_down, stars5, stars1, approved, rejected]
+  questions_file: data/questions_screened_agree.csv   # coded by agreement (direction +1)
+  symbols_dir: data/symbols_cues
+  stimuli_dir: stimuli_cues
+  contrast: {x: thumbs_down, y: thumbs_up, expected_sign: -1}
+  lean: {thumbs_up: 1, stars5: 1, approved: 1, thumbs_down: -1, stars1: -1, rejected: -1}   # +1 = more agreement
+  judge: {model: gpt-4.1-mini, temperature: 0.0}
+  handcheck_n: 30
+  handcheck_seed: 0

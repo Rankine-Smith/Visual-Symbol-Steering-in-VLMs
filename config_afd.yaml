@@ -1,0 +1,26 @@
+# Exploratory: AfD logo vs the Democrat and Republican logos on gpt-6-luna, reasoning off.
+# Same design as config_newmodels.yaml (the none / blank / democrat / republican / scrambled calls are reused from
+# the cache); adds the AfD logo and its scrambled control. Note: the AfD logo contains the party name as text.
+models: [gpt-6-luna]
+prompt_variants: [P1, P2]
+repeats: 2
+sizes: [0.25]
+conditions: [none, blank, democrat, republican, afd, scrambled_democrat, scrambled_republican, scrambled_afd]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+
+# Expected signs are our guesses, written down before the run: AfD (far right) should push answers right,
+# so D = S_x - S_afd < 0 for Democrat and, more weakly, for Republican.
+model_tests:
+  - {model: gpt-6-luna, x: democrat, y: afd, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-luna, x: republican, y: afd, expected_sign: -1, alpha: 0.05}
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

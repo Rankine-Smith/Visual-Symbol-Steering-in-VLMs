@@ -1,0 +1,22 @@
+# Exploratory: does removing the neutral option ("Neither agree nor disagree") reveal a logo effect on gpt-6-luna?
+# Same stimuli, statements and model settings as the gpt-6-luna part of config_newmodels.yaml; only the prompts
+# differ: P4 = P1 and P5 = P2 without the neutral line (forced choice, scored 1,2,4,5).
+models: [gpt-6-luna]
+prompt_variants: [P4, P5]
+repeats: 2
+sizes: [0.25]
+conditions: [none, blank, democrat, republican]
+questions_file: data/questions_screened.csv
+position: top_left
+include_blank: true
+include_scrambled: false
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+
+model_params:
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+
+model_tests:
+  - {model: gpt-6-luna, x: democrat, y: republican, expected_sign: -1, alpha: 0.05}

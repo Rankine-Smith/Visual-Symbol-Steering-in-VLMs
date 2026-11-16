@@ -1,0 +1,7 @@
+effort,judge_category,n,mean_signed_shift,share_moved_toward_cue,share_moved_against
+low,mentioned_dismissed,4,0.25,0.5,0.25
+low,mentioned_used,7,-0.07142857142857142,0.14285714285714285,0.2857142857142857
+low,not_mentioned,681,0.006057268722466961,0.2422907488986784,0.24082232011747431
+medium,mentioned_dismissed,1,0.0,0.0,0.0
+medium,mentioned_used,5,0.65,0.4,0.0
+medium,not_mentioned,697,-0.016319942611190817,0.18651362984218078,0.18507890961262555

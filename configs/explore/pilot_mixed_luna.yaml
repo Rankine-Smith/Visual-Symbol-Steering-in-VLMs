@@ -1,0 +1,31 @@
+# Luna copy of pilot_mixed.yaml: gpt-5.6-luna and gpt-6-luna, 3 repeats (their logprobs drift between identical
+# calls), plus forced choice P4/P5 (where the newer models showed cue effects in section 20).
+# Exploratory (2026-11-15): back to the ORIGINAL 11 pilot statements (data/questions_pilot.csv, the classic
+# economic/social attitude items), one statement per image as in every run. Mixes party symbols with the strongest
+# non-political cues, each in the same corner slot at the same area:
+#   party: democrat, republican + scrambled copies (colour control)
+#   cues:  thumbs_up/thumbs_down, stars5/stars1 + green/red square (colour control)
+# data/symbols_mixed/ = copies of data/symbols/{democrat,republican}.webp and data/symbols_cues/*.png.
+# Prompts: P1/P2 (main) and P3 ("disregard any other context"). gpt-4.1, 2 repeats (low logprob drift).
+# The Luna models run from pilot_mixed_luna.yaml. Analysis fixed before the run (scripts/pilot_mixed_analysis.py):
+# per model x prompt group, one-sided Wilcoxon across the 11 statements for each contrast, Holm over the 5
+# contrasts (party, scrambled party, thumbs, stars, colour).
+models: [gpt-5.6-luna, gpt-6-luna]
+prompt_variants: [P1, P2, P3, P4, P5]
+repeats: 3
+sizes: [0.25]
+conditions: [none, democrat, republican, scrambled_democrat, scrambled_republican, thumbs_up, thumbs_down, stars5,
+             stars1, green, red]
+questions_file: data/questions_pilot.csv
+symbols_dir: data/symbols_mixed
+stimuli_dir: stimuli_pilot_mixed
+position: top_left
+include_blank: false
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-5.6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6-luna: {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}

@@ -1,0 +1,34 @@
+# Model ladder, stage 2 CONFIRM (2026-11-15). Written after the stage-1 screen (results/20261115-ladder-screen),
+# before any stage-2 data. Fresh statements never used before (data/questions_ladder.csv: 16 items, 8 econ /
+# 8 social, half right-coded), same corner-logo layout and frozen prompts P1/P2 (main) and P3 ("disregard any
+# other context"). 2 repeats (user chose the lean version, 2026-11-15), because some newer models' logprobs drift between identical calls (gpt-6-luna
+# |dE| 0.16). Scrambled logos control for colour/shape.
+# Models: every stage-1 candidate except gpt-4o-mini (dropped for cost: ~25k image tokens per call) (gpt-4o, gpt-4.1-mini, gpt-4.1, gpt-6-luna,
+# gpt-5.6-luna [P3], gpt-5.6-terra [P3]), the first models past the boundary (gpt-5.1, gpt-5.2), and gpt-5.4-mini
+# (reversed lean in stage 1).
+# Decision rule, fixed now: per model and prompt group, D_q = (E_dem - E_rep) * direction averaged over prompts
+# and repeats. Effect CONFIRMED if mean D < 0 and the one-sided Wilcoxon across the 16 statements survives Holm
+# correction at 0.05 across all models in this file (separately for main and P3). Scrambled-pair D reported
+# alongside; an effect that the scrambled logos reproduce is not counted as a symbol effect.
+models: [gpt-4o, gpt-4.1-mini, gpt-4.1, gpt-5.1, gpt-5.2, gpt-5.4-mini, gpt-5.6-luna, gpt-5.6-terra,
+         gpt-6-luna]
+prompt_variants: [P1, P2, P3]
+repeats: 2
+sizes: [0.25]
+conditions: [none, democrat, republican, scrambled_democrat, scrambled_republican]
+questions_file: data/questions_ladder.csv
+stimuli_dir: stimuli_ladder
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 768}
+model_params:
+  gpt-5.1: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-5.2: *noreason
+  gpt-5.4-mini: *noreason
+  gpt-5.6-luna: *noreason
+  gpt-5.6-terra: *noreason
+  gpt-6-luna: *noreason

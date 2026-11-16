@@ -1,0 +1,73 @@
+model,group,measure,half,n_q,mean,ci_lo,ci_hi,expected_sign,share_expected_sign
+gpt-5.1,forced,A_party,right-coded (dir +1),8.0,-0.2347744487213752,-0.6732268628845639,0.10780282986438477,-1.0,0.875
+gpt-5.1,forced,A_party,left-coded (dir -1),8.0,0.27948435108163605,-0.08709964388927326,0.7745086152232605,1.0,0.625
+gpt-5.1,forced,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.23449883449883446,,,,
+gpt-5.1,forced,D_cue,right-coded (dir +1),8.0,-0.5298687483075619,-0.7426108586194092,-0.33072710343154466,-1.0,1.0
+gpt-5.1,forced,D_cue,left-coded (dir -1),8.0,-0.34016007798164144,-0.6920221980966094,-0.09284237524490634,-1.0,1.0
+gpt-5.1,forced,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.10489510489510488,,,,
+gpt-5.4-mini,forced,A_party,right-coded (dir +1),8.0,0.004794258268897789,-0.10103611258614338,0.08719188522054193,-1.0,0.375
+gpt-5.4-mini,forced,A_party,left-coded (dir -1),8.0,0.039631226787045504,-0.011673579044862171,0.10446080426872009,1.0,0.75
+gpt-5.4-mini,forced,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.7984459984459983,,,,
+gpt-5.4-mini,forced,D_cue,right-coded (dir +1),8.0,-0.6344639952721425,-0.8615631540540873,-0.42832800191771675,-1.0,1.0
+gpt-5.4-mini,forced,D_cue,left-coded (dir -1),8.0,-0.4352734871562144,-0.6207113816702218,-0.233971339703084,-1.0,0.875
+gpt-5.4-mini,forced,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.4418026418026417,,,,
+gpt-5.6-luna,forced,A_party,right-coded (dir +1),8.0,0.05824311631201118,-0.13039724600503938,0.3019558350247766,-1.0,0.42857142857142855
+gpt-5.6-luna,forced,A_party,left-coded (dir -1),8.0,0.012672292859671419,-0.054826407950054584,0.08060212540544273,1.0,0.42857142857142855
+gpt-5.6-luna,forced,A_party,"between halves (Mann-Whitney p, 2-sided)",,1.0,,,,
+gpt-5.6-luna,forced,D_cue,right-coded (dir +1),8.0,-0.0450322515087363,-0.12561669911674855,0.04737210049553883,-1.0,0.75
+gpt-5.6-luna,forced,D_cue,left-coded (dir -1),8.0,-0.05958483932984965,-0.14240235276086488,0.012805455337150662,-1.0,0.625
+gpt-5.6-luna,forced,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.959129759129759,,,,
+gpt-6-luna,forced,A_party,right-coded (dir +1),8.0,0.1414578911195048,-0.053469509642770856,0.37838553784368856,-1.0,0.5
+gpt-6-luna,forced,A_party,left-coded (dir -1),8.0,-0.02812176572548175,-0.12589152640119103,0.06810424775736416,1.0,0.42857142857142855
+gpt-6-luna,forced,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.5737373737373737,,,,
+gpt-6-luna,forced,D_cue,right-coded (dir +1),8.0,-0.22355587696684606,-0.4126471299454786,-0.0589204091717331,-1.0,0.75
+gpt-6-luna,forced,D_cue,left-coded (dir -1),8.0,-0.043936592019978044,-0.15319953401761402,0.02976839831284961,-1.0,0.42857142857142855
+gpt-6-luna,forced,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.19487179487179485,,,,
+gpt-6.1-terra,forced,A_party,right-coded (dir +1),8.0,-0.014621837617100675,-0.043865512851302024,0.0,-1.0,1.0
+gpt-6.1-terra,forced,A_party,left-coded (dir -1),8.0,0.019693601739303346,0.0,0.057561876611054275,1.0,1.0
+gpt-6.1-terra,forced,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.10574461128013017,,,,
+gpt-6.1-terra,forced,D_cue,right-coded (dir +1),8.0,-0.19011478663690257,-0.44523366746124604,-0.034131248135517045,-1.0,1.0
+gpt-6.1-terra,forced,D_cue,left-coded (dir -1),8.0,-0.2005422734272359,-0.4223171591845803,-0.027145245760367642,-1.0,1.0
+gpt-6.1-terra,forced,D_cue,"between halves (Mann-Whitney p, 2-sided)",,1.0,,,,
+gpt-4.1-mini,main,A_party,right-coded (dir +1),8.0,-0.27782658257738985,-0.7909212335796214,0.1715501290236683,-1.0,0.75
+gpt-4.1-mini,main,A_party,left-coded (dir -1),8.0,1.421325902135107,0.7963158681728343,2.08400032458142,1.0,1.0
+gpt-4.1-mini,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.0006216006216006216,,,,
+gpt-4.1-mini,main,D_cue,right-coded (dir +1),8.0,-2.0502788318239857,-2.6021461218242505,-1.4877461578590587,-1.0,1.0
+gpt-4.1-mini,main,D_cue,left-coded (dir -1),8.0,-3.170805752665419,-3.4862032983453024,-2.8016488591825564,-1.0,1.0
+gpt-4.1-mini,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.010411810411810413,,,,
+gpt-4.1,main,A_party,right-coded (dir +1),8.0,-0.5750655253327921,-1.246798256954795,-0.06941372696531894,-1.0,1.0
+gpt-4.1,main,A_party,left-coded (dir -1),8.0,0.8123258569523834,0.1872119255219476,1.5199135515298272,1.0,0.875
+gpt-4.1,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.0006216006216006216,,,,
+gpt-4.1,main,D_cue,right-coded (dir +1),8.0,-1.3249170858771817,-1.6254876736898094,-1.0000611201743936,-1.0,1.0
+gpt-4.1,main,D_cue,left-coded (dir -1),8.0,-1.7521367410061899,-2.453413645801004,-0.9999253799608651,-1.0,1.0
+gpt-4.1,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.32820512820512815,,,,
+gpt-5.1,main,A_party,right-coded (dir +1),8.0,-0.026920360061565785,-0.07971627265402727,-5.28964187382354e-07,-1.0,0.875
+gpt-5.1,main,A_party,left-coded (dir -1),8.0,0.03351359673999493,-0.0006773266826877178,0.08363394340304497,1.0,0.625
+gpt-5.1,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.13038073038073036,,,,
+gpt-5.1,main,D_cue,right-coded (dir +1),8.0,-0.34299722652394926,-0.6338173482988396,-0.08872206373069202,-1.0,1.0
+gpt-5.1,main,D_cue,left-coded (dir -1),8.0,-0.19331433263934197,-0.40206110482131313,-0.02080486749979313,-1.0,1.0
+gpt-5.1,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.4418026418026417,,,,
+gpt-5.4-mini,main,A_party,right-coded (dir +1),8.0,0.0010693846594624357,-0.1345373795643846,0.10422905606841393,-1.0,0.375
+gpt-5.4-mini,main,A_party,left-coded (dir -1),8.0,-0.007646624044936989,-0.08074604272565326,0.07134551272323031,1.0,0.625
+gpt-5.4-mini,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.5737373737373737,,,,
+gpt-5.4-mini,main,D_cue,right-coded (dir +1),8.0,-0.4298644586467623,-0.5642363595664798,-0.2962801652914172,-1.0,1.0
+gpt-5.4-mini,main,D_cue,left-coded (dir -1),8.0,-0.360656884532589,-0.5420280930664496,-0.1913765008963874,-1.0,0.875
+gpt-5.4-mini,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.5737373737373737,,,,
+gpt-5.6-luna,main,A_party,right-coded (dir +1),8.0,-0.0092415249152763,-0.11845303405527585,0.0938425024577117,-1.0,0.375
+gpt-5.6-luna,main,A_party,left-coded (dir -1),8.0,0.09244701491513191,-0.01636023681048784,0.1942535156709795,1.0,0.75
+gpt-5.6-luna,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.32820512820512815,,,,
+gpt-5.6-luna,main,D_cue,right-coded (dir +1),8.0,-0.07609369600536503,-0.2265827286802598,0.06835589279492355,-1.0,0.75
+gpt-5.6-luna,main,D_cue,left-coded (dir -1),8.0,-0.12440988096679631,-0.20835503398605235,-0.04721495118120374,-1.0,0.875
+gpt-5.6-luna,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.6453768453768453,,,,
+gpt-6-luna,main,A_party,right-coded (dir +1),8.0,0.003906816732694052,-0.0971543894141842,0.09629790637738866,-1.0,0.42857142857142855
+gpt-6-luna,main,A_party,left-coded (dir -1),8.0,-0.024974800317935975,-0.054465555501816865,-0.0020004275095202306,1.0,0.42857142857142855
+gpt-6-luna,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.461920478323797,,,,
+gpt-6-luna,main,D_cue,right-coded (dir +1),8.0,-0.04318818953838771,-0.15651484011522565,0.049977165285042646,-1.0,0.5
+gpt-6-luna,main,D_cue,left-coded (dir -1),8.0,-0.006365043954204674,-0.05852796544275271,0.043406420618805175,-1.0,0.7142857142857143
+gpt-6-luna,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.959129759129759,,,,
+gpt-6.1-terra,main,A_party,right-coded (dir +1),8.0,-0.07658529652051221,-0.18289507427585078,0.004501360415204547,-1.0,0.8
+gpt-6.1-terra,main,A_party,left-coded (dir -1),8.0,-0.06905849393561386,-0.129574932112353,-0.018664532812954604,1.0,0.0
+gpt-6.1-terra,main,A_party,"between halves (Mann-Whitney p, 2-sided)",,0.5176341185833455,,,,
+gpt-6.1-terra,main,D_cue,right-coded (dir +1),8.0,-0.21132279042165172,-0.4015290193485376,-0.057409130628071264,-1.0,0.8571428571428571
+gpt-6.1-terra,main,D_cue,left-coded (dir -1),8.0,-0.13614760156289318,-0.3044387969768676,0.03247962813927006,-1.0,0.8571428571428571
+gpt-6.1-terra,main,D_cue,"between halves (Mann-Whitney p, 2-sided)",,0.9162977979978499,,,,

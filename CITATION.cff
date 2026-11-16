@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Visual Symbol Injection Silently Steers Multimodal Judgments"
+type: software
+authors:
+  - given-names: "Will"
+    family-names: "Rankine Smith"
+  - given-names: "Shayan"
+    family-names: "Navab"
+date-released: 2026-11-16
+license: MIT
+repository-code: "https://github.com/Rankine-Smith/visual-symbol-steering"
+keywords:
+  - vision-language models
+  - political bias
+  - priming
+  - AI epistemics

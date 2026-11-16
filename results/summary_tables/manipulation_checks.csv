@@ -1,0 +1,108 @@
+run,check,model,kind,condition,n,rate
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,blank,blank,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,none,none,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_china,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_democrat,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_hammer_sickle,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_republican,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_usa,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,symbol,china,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,symbol,democrat,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,symbol,hammer_sickle,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,symbol,republican,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4.1-mini,symbol,usa,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,blank,blank,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,none,none,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,scrambled,scrambled_china,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,scrambled,scrambled_democrat,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,scrambled,scrambled_hammer_sickle,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,scrambled,scrambled_republican,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,scrambled,scrambled_usa,3,0.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,symbol,china,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,symbol,democrat,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,symbol,hammer_sickle,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,symbol,republican,3,1.0
+20261114-163251,describe image (symbol mentioned?),gpt-4o-mini,symbol,usa,3,1.0
+20261114-163251,transcribe statement (passed),gpt-4.1-mini,statement,none,11,1.0
+20261114-163251,transcribe statement (passed),gpt-4o-mini,statement,none,11,1.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,blank,blank,3,1.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,none,none,3,0.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_democrat,3,0.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_republican,3,0.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,symbol,democrat,3,1.0
+20261114-173050,describe image (symbol mentioned?),gpt-4.1-mini,symbol,republican,3,1.0
+20261114-173050,transcribe statement (passed),gpt-4.1-mini,statement,none,19,1.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,blank,blank,3,1.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,none,none,3,0.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_afd,3,0.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_democrat,3,0.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_republican,3,0.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,afd,3,1.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,democrat,3,1.0
+20261114-afd-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,republican,3,1.0
+20261114-afd-luna,transcribe statement (passed),gpt-6-luna,statement,none,19,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.20-0309-non-reasoning,blank,blank,3,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.20-0309-non-reasoning,none,none,3,0.0
+20261114-grok,describe image (symbol mentioned?),grok-4.20-0309-non-reasoning,symbol,democrat,3,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.20-0309-non-reasoning,symbol,republican,3,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.3,blank,blank,3,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.3,none,none,3,0.0
+20261114-grok,describe image (symbol mentioned?),grok-4.3,symbol,democrat,3,1.0
+20261114-grok,describe image (symbol mentioned?),grok-4.3,symbol,republican,3,1.0
+20261114-grok,transcribe statement (passed),grok-4.20-0309-non-reasoning,statement,none,19,1.0
+20261114-grok,transcribe statement (passed),grok-4.3,statement,none,19,1.0
+20261114-grok47,describe image (symbol mentioned?),grok-4.7,blank,blank,3,1.0
+20261114-grok47,describe image (symbol mentioned?),grok-4.7,none,none,3,0.0
+20261114-grok47,describe image (symbol mentioned?),grok-4.7,symbol,democrat,3,1.0
+20261114-grok47,describe image (symbol mentioned?),grok-4.7,symbol,republican,3,1.0
+20261114-grok47,transcribe statement (passed),grok-4.7,statement,none,19,1.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,blank,blank,3,1.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,none,none,3,0.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_afd,3,0.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_democrat,3,0.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_hammer_sickle,3,0.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_republican,3,0.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,afd,3,1.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,democrat,3,1.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,hammer_sickle,3,1.0
+20261114-hammer-luna,describe image (symbol mentioned?),gpt-6-luna,symbol,republican,3,1.0
+20261114-hammer-luna,transcribe statement (passed),gpt-6-luna,statement,none,19,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,blank,blank,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,none,none,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_democrat,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_republican,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,scrambled,scrambled_trump,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,symbol,democrat,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,symbol,republican,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-4.1-mini,symbol,trump,3,0.3333333333333333
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,blank,blank,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,none,none,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_democrat,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_republican,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_trump,3,0.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,symbol,democrat,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,symbol,republican,3,1.0
+20261114-large-trump,describe image (symbol mentioned?),gpt-6-luna,symbol,trump,3,1.0
+20261114-large-trump,transcribe statement (passed),gpt-4.1-mini,statement,none,19,1.0
+20261114-large-trump,transcribe statement (passed),gpt-6-luna,statement,none,19,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,blank,blank,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,none,none,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_democrat,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,scrambled,scrambled_republican,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,symbol,democrat,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-luna,symbol,republican,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,blank,blank,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,none,none,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,scrambled,scrambled_democrat,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,scrambled,scrambled_republican,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,symbol,democrat,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6-sol,symbol,republican,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,blank,blank,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,none,none,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,scrambled,scrambled_democrat,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,scrambled,scrambled_republican,3,0.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,symbol,democrat,3,1.0
+20261114-newmodels,describe image (symbol mentioned?),gpt-6.1-terra,symbol,republican,3,1.0
+20261114-newmodels,transcribe statement (passed),gpt-6-luna,statement,none,19,1.0
+20261114-newmodels,transcribe statement (passed),gpt-6-sol,statement,none,19,1.0
+20261114-newmodels,transcribe statement (passed),gpt-6.1-terra,statement,none,19,1.0

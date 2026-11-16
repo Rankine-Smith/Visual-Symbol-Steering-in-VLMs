@@ -1,0 +1,65 @@
+{
+  "gpt-4.1-mini": {
+    "n": 190,
+    "spearman_pyes_absdelta": 0.22354752500798244,
+    "spearman_p": 0.001932673286372845,
+    "auroc_pyes_shifted": 0.5879355460680347,
+    "n_shifted": 53,
+    "spearman_open_absdelta": 0.26881214241362317,
+    "within_condition": {
+      "blank": {
+        "n": 38,
+        "spearman": -0.3601050443155706,
+        "auroc": 0.3824884792626728,
+        "n_shifted": 7
+      },
+      "democrat": {
+        "n": 38,
+        "spearman": 0.21588795273005798,
+        "auroc": 0.5594202898550724,
+        "n_shifted": 15
+      },
+      "republican": {
+        "n": 38,
+        "spearman": 0.3347193347193347,
+        "auroc": 0.6923076923076923,
+        "n_shifted": 13
+      },
+      "scrambled_democrat": {
+        "n": 38,
+        "spearman": -0.034029981398402444,
+        "auroc": 0.4392857142857143,
+        "n_shifted": 10
+      },
+      "scrambled_republican": {
+        "n": 38,
+        "spearman": -0.17474559579822738,
+        "auroc": 0.45,
+        "n_shifted": 8
+      }
+    },
+    "symbol_only": {
+      "n": 76,
+      "spearman": 0.23830485304169513,
+      "auroc": 0.5900297619047619,
+      "n_shifted": 28
+    },
+    "regression": {
+      "formula": "p_yes ~ C(condition) + C(variant) + abs_delta  (OLS, SEs clustered by statement)",
+      "abs_delta_coef": 0.12269271281145423,
+      "abs_delta_se": 0.051614561459138994,
+      "abs_delta_p": 0.017449596282411536,
+      "condition_wald_p": 5.484239917122631e-23,
+      "r2_condition_only": 0.5759443808296691,
+      "r2_condition_plus_delta": 0.6005128629344615,
+      "r2_delta_only": 0.14707885568263934,
+      "condition_coefs": {
+        "democrat": 0.26113097156985954,
+        "republican": 0.601050645441873,
+        "scrambled_democrat": -0.008502501973414286,
+        "scrambled_republican": -0.005041193623224291
+      }
+    },
+    "interpretation": "both"
+  }
+}

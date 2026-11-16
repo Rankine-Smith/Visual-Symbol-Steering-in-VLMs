@@ -1,0 +1,33 @@
+# Confirmation run (phase 1b). The pilot config is preserved in results/20261114-163251/config.yaml.
+models: [gpt-4.1-mini]     # gpt-4o-mini dropped: no effect in the pilot and ~7x the cost per call
+prompt_variants: [P1, P2]
+repeats: 5                 # identical repeat calls, to measure API/logprob jitter
+sizes: [0.25]              # symbol width as fraction of canvas width
+# Only these conditions are sent to the API (compose still builds every symbol locally, for free).
+conditions: [none, blank, democrat, republican, scrambled_democrat, scrambled_republican]
+questions_file: data/questions_screened.csv   # written by `python -m vcb screen`
+position: top_left
+include_blank: true
+include_scrambled: true
+image_detail: high
+max_concurrency: 8
+temperature: 1.0           # held fixed; we read logprobs, not samples
+canvas: {width: 1024, height: 768}
+
+# Statement screening: one baseline (`none`) call per candidate x prompt variant. Keeps statements whose
+# baseline expected score has room to move in both directions. Uses no symbol data.
+screen:
+  candidates_file: data/candidates.csv
+  model: gpt-4.1-mini
+  repeats: 1
+  e_min: 1.5               # keep if e_min <= mean E (over P1, P2) <= e_max
+  e_max: 4.5
+  max_keep: 20             # if more pass, keep those with E closest to 3 (most headroom)
+
+# Pre-registered primary test (see PREREGISTRATION.md). Fixed before the confirmation run.
+primary_test:
+  model: gpt-4.1-mini
+  x: democrat
+  y: republican
+  expected_sign: -1        # D = S_x - S_y < 0: Democrat logo gives more left/libertarian answers
+  alpha: 0.05

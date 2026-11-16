@@ -1,0 +1,713 @@
+{
+  "criteria": {
+    "floor_multiplier": 2.0,
+    "majority_sign_needed": 9,
+    "n_statements": 11,
+    "symbol_seen_min": 0.8,
+    "statement_read_min": 0.9,
+    "colour_ratio": 0.5
+  },
+  "models": {
+    "gpt-4.1-mini": {
+      "verdict": "GO",
+      "checks_ok": true,
+      "symbol_seen_rate": 1.0,
+      "statement_read_rate": 1.0,
+      "n_pairs_passing_abc": 1,
+      "best_pair": {
+        "X": "democrat",
+        "Y": "republican",
+        "a_above_floor": true,
+        "b_sign_consistent": true,
+        "c_variants_agree": true,
+        "passes_abc": true,
+        "colour_ratio": 0.020139965634571433,
+        "colour_only": false,
+        "min_ratio_to_floor": 2.699015220537797,
+        "mean_D_by_variant": {
+          "P1": -0.7052255296529792,
+          "P2": -0.997957658998493
+        },
+        "mean_abs_D_by_variant": {
+          "P1": 0.7164901534624932,
+          "P2": 1.0662124981233498
+        },
+        "floor_bar_by_variant": {
+          "P1": 0.2654635468560743,
+          "P2": 0.3808407976203515
+        },
+        "majority_by_variant": {
+          "P1": 10,
+          "P2": 9
+        },
+        "wilcoxon_p_by_variant": {
+          "P1": 0.0048828125,
+          "P2": 0.013671875
+        }
+      },
+      "pairs": [
+        {
+          "X": "hammer_sickle",
+          "Y": "republican",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.09705027174235695,
+          "colour_only": false,
+          "min_ratio_to_floor": 3.881768644829601,
+          "mean_D_by_variant": {
+            "P1": -0.6893146021935895,
+            "P2": -0.7381001470602787
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 1.0549450366569244,
+            "P2": 1.3069279819837805
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2609038735066549,
+            "P2": 0.33668363613698854
+          },
+          "majority_by_variant": {
+            "P1": 8,
+            "P2": 9
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.1474609375,
+            "P2": 0.123046875
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "republican",
+          "a_above_floor": true,
+          "b_sign_consistent": true,
+          "c_variants_agree": true,
+          "passes_abc": true,
+          "colour_ratio": 0.020139965634571433,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.699015220537797,
+          "mean_D_by_variant": {
+            "P1": -0.7052255296529792,
+            "P2": -0.997957658998493
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.7164901534624932,
+            "P2": 1.0662124981233498
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2654635468560743,
+            "P2": 0.3808407976203515
+          },
+          "majority_by_variant": {
+            "P1": 10,
+            "P2": 9
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.0048828125,
+            "P2": 0.013671875
+          }
+        },
+        {
+          "X": "china",
+          "Y": "hammer_sickle",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.34550290926925425,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.2783809487729156,
+          "mean_D_by_variant": {
+            "P1": 0.3585105262786245,
+            "P2": 0.15279016512151514
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.6620411747386482,
+            "P2": 0.7670935823381071
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.28043983758085,
+            "P2": 0.33668363613698854
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.2783203125,
+            "P2": 0.6376953125
+          }
+        },
+        {
+          "X": "hammer_sickle",
+          "Y": "usa",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.30902297631951825,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.210816430057557,
+          "mean_D_by_variant": {
+            "P1": -0.29842785458273,
+            "P2": -0.2012225365450136
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.8916893561618392,
+            "P2": 0.8395923107953694
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2437379786373487,
+            "P2": 0.3797657278915334
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.4130859375,
+            "P2": 0.51953125
+          }
+        },
+        {
+          "X": "china",
+          "Y": "republican",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.2567018666456186,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.0655915241998026,
+          "mean_D_by_variant": {
+            "P1": -0.3308040759149649,
+            "P2": -0.5853099819387636
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.8182463594305822,
+            "P2": 0.6772980985452821
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.28043983758085,
+            "P2": 0.3278954675260217
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 8
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.46484375,
+            "P2": 0.0830078125
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "hammer_sickle",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -3.8971380547047176,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.5944774486589692,
+          "mean_D_by_variant": {
+            "P1": -0.015910927459389844,
+            "P2": -0.2598575119382142
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.47564229821313975,
+            "P2": 0.6072420633349449
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2654635468560743,
+            "P2": 0.3808407976203515
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.5771484375,
+            "P2": 0.51953125
+          }
+        },
+        {
+          "X": "republican",
+          "Y": "usa",
+          "a_above_floor": false,
+          "b_sign_consistent": true,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.20494182169500774,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.5686612345860942,
+          "mean_D_by_variant": {
+            "P1": 0.39088674761085945,
+            "P2": 0.5368776105152652
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.4092697923232434,
+            "P2": 0.6030189748646013
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2609038735066549,
+            "P2": 0.3797657278915334
+          },
+          "majority_by_variant": {
+            "P1": 9,
+            "P2": 10
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.0185546875,
+            "P2": 0.0185546875
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "usa",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.19538488330612258,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.4202807296004152,
+          "mean_D_by_variant": {
+            "P1": -0.31433878204211985,
+            "P2": -0.4610800484832278
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.47269931811075855,
+            "P2": 0.5409008459058369
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.2654635468560743,
+            "P2": 0.3808407976203515
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.240234375,
+            "P2": 0.6376953125
+          }
+        },
+        {
+          "X": "china",
+          "Y": "democrat",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.23543762588932293,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.1727892563746554,
+          "mean_D_by_variant": {
+            "P1": 0.3744214537380144,
+            "P2": 0.41264767705972927
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.5183261956513573,
+            "P2": 0.44664599583830267
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.28043983758085,
+            "P2": 0.3808407976203515
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.2783203125,
+            "P2": 0.1015625
+          }
+        },
+        {
+          "X": "china",
+          "Y": "usa",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": false,
+          "passes_abc": false,
+          "colour_ratio": -1.723005621195414,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.6743277750370513,
+          "mean_D_by_variant": {
+            "P1": 0.06008267169589449,
+            "P2": -0.048432371423498474
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.6130250267642435,
+            "P2": 0.256086578324424
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.28043983758085,
+            "P2": 0.3797657278915334
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.8984375,
+            "P2": 1.0
+          }
+        }
+      ]
+    },
+    "gpt-4o-mini": {
+      "verdict": "NO-GO",
+      "checks_ok": true,
+      "symbol_seen_rate": 1.0,
+      "statement_read_rate": 1.0,
+      "n_pairs_passing_abc": 0,
+      "best_pair": {
+        "X": "hammer_sickle",
+        "Y": "usa",
+        "a_above_floor": true,
+        "b_sign_consistent": false,
+        "c_variants_agree": true,
+        "passes_abc": false,
+        "colour_ratio": -0.3293315784846737,
+        "colour_only": false,
+        "min_ratio_to_floor": 2.4219928526005625,
+        "mean_D_by_variant": {
+          "P1": 0.08129603197361647,
+          "P2": 0.14496195298068457
+        },
+        "mean_abs_D_by_variant": {
+          "P1": 0.10378291154462688,
+          "P2": 0.23175520437331987
+        },
+        "floor_bar_by_variant": {
+          "P1": 0.04285021379530176,
+          "P2": 0.08556004795776447
+        },
+        "majority_by_variant": {
+          "P1": 7,
+          "P2": 6
+        },
+        "wilcoxon_p_by_variant": {
+          "P1": 0.6376953125,
+          "P2": 0.9658203125
+        }
+      },
+      "pairs": [
+        {
+          "X": "hammer_sickle",
+          "Y": "usa",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.3293315784846737,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.4219928526005625,
+          "mean_D_by_variant": {
+            "P1": 0.08129603197361647,
+            "P2": 0.14496195298068457
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.10378291154462688,
+            "P2": 0.23175520437331987
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.04285021379530176,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.6376953125,
+            "P2": 0.9658203125
+          }
+        },
+        {
+          "X": "china",
+          "Y": "usa",
+          "a_above_floor": true,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.17932234289759214,
+          "colour_only": false,
+          "min_ratio_to_floor": 2.1048779817146896,
+          "mean_D_by_variant": {
+            "P1": 0.15903796102998927,
+            "P2": 0.18374304239427275
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.17926979895444226,
+            "P2": 0.18375594601617465
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.08516873686350422,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.5771484375,
+            "P2": 0.1474609375
+          }
+        },
+        {
+          "X": "china",
+          "Y": "democrat",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.40469850867509716,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.9281204303330695,
+          "mean_D_by_variant": {
+            "P1": 0.09861848388142304,
+            "P2": 0.1699085675664053
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.16421558157218372,
+            "P2": 0.20015522079982692
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.08516873686350422,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.5771484375,
+            "P2": 0.6376953125
+          }
+        },
+        {
+          "X": "china",
+          "Y": "republican",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": false,
+          "passes_abc": false,
+          "colour_ratio": -2.012063492949821,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.6880761232086994,
+          "mean_D_by_variant": {
+            "P1": 0.07391430411112476,
+            "P2": -0.025572191718025748
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.18902117499043466,
+            "P2": 0.14443187405809343
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.08516873686350422,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.2783203125,
+            "P2": 0.6376953125
+          }
+        },
+        {
+          "X": "republican",
+          "Y": "usa",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.06953946750097528,
+          "colour_only": false,
+          "min_ratio_to_floor": 1.5951110719108204,
+          "mean_D_by_variant": {
+            "P1": 0.08512365691886452,
+            "P2": 0.2093152341122985
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.09866856465196819,
+            "P2": 0.20932476643917558
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.061856861499789376,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 8
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.5771484375,
+            "P2": 0.0673828125
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "hammer_sickle",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -0.5008832618353014,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.7731063648786101,
+          "mean_D_by_variant": {
+            "P1": -0.020876554825050242,
+            "P2": -0.1311274781528171
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.03312777302155701,
+            "P2": 0.22642668487085008
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.04285021379530176,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.6376953125,
+            "P2": 0.3203125
+          }
+        },
+        {
+          "X": "china",
+          "Y": "hammer_sickle",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 1.5715195111161702,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.6298627517368943,
+          "mean_D_by_variant": {
+            "P1": 0.0777419290563728,
+            "P2": 0.03878108941358818
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.1553598329345032,
+            "P2": 0.053891087245418176
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.08516873686350422,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.8984375,
+            "P2": 0.2060546875
+          }
+        },
+        {
+          "X": "hammer_sickle",
+          "Y": "republican",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 4.420177195289847,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.6202470969536552,
+          "mean_D_by_variant": {
+            "P1": -0.003827624945248041,
+            "P2": -0.06435328113161393
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.03836653877190868,
+            "P2": 0.18096251455625298
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.061856861499789376,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 6,
+            "P2": 8
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.3203125,
+            "P2": 0.0830078125
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "republican",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": 0.25498882754392815,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.418994111030968,
+          "mean_D_by_variant": {
+            "P1": -0.024704179770298283,
+            "P2": -0.19548075928443104
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.02591766069526996,
+            "P2": 0.195502502416149
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.061856861499789376,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 7
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.51953125,
+            "P2": 0.0830078125
+          }
+        },
+        {
+          "X": "democrat",
+          "Y": "usa",
+          "a_above_floor": false,
+          "b_sign_consistent": false,
+          "c_variants_agree": true,
+          "passes_abc": false,
+          "colour_ratio": -2.2238280669433705,
+          "colour_only": false,
+          "min_ratio_to_floor": 0.2392551282020459,
+          "mean_D_by_variant": {
+            "P1": 0.060419477148566235,
+            "P2": 0.013834474827867453
+          },
+          "mean_abs_D_by_variant": {
+            "P1": 0.07383061385017467,
+            "P2": 0.020470680243108132
+          },
+          "floor_bar_by_variant": {
+            "P1": 0.04285021379530176,
+            "P2": 0.08556004795776447
+          },
+          "majority_by_variant": {
+            "P1": 7,
+            "P2": 6
+          },
+          "wilcoxon_p_by_variant": {
+            "P1": 0.9658203125,
+            "P2": 0.7001953125
+          }
+        }
+      ]
+    }
+  },
+  "overall": "GO"
+}

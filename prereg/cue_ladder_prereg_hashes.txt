@@ -1,0 +1,5 @@
+2026-11-15T19:58:41Z  (hashes taken before the first API call of this experiment)
+bc9fa15b2745959f469e3e17b9fe2da78a4dd79686b33c577f1d91346fdc0659  PREREGISTRATION_cue_ladder.md
+f1d6fb332c06d914fb63ef12ff6801c7054dd2036e92a7c3a7949741d20e3c1e  scripts/cue_ladder_analysis.py
+8b3d28d3dbc51936f009521d70c6895717a44caa501e56225158f7817cd7f03d  configs/cue_ladder/new.yaml
+38d45683fcdd6745fb07e831d357ae5e71bca43214a9ccda6bd693c1ac7daec6  configs/cue_ladder/old.yaml

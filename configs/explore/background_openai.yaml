@@ -1,0 +1,19 @@
+# Exploratory (2026-11-15): logo-as-background stimuli (scripts/make_background_stimuli.py). The Democrat or
+# Republican logo fills ~78% of a square canvas and the statement is printed on top of it; `none` = same
+# text on white. 6 statements with the largest past shifts. Deliberately breaks the no-overlap rule (team idea).
+# Frozen prompts P1/P2 (with neutral) and P4/P5 (forced choice); none tells the model to ignore anything.
+models: [gpt-4.1-mini, gpt-6-luna, gpt-6.1-terra, gpt-6-sol]
+prompt_variants: [P1, P2, P4, P5]
+conditions: [none, democrat, republican]
+questions_file: data/questions_background.csv
+stimuli_dir: stimuli_background
+repeats: 3
+sizes: [1.0]
+image_detail: high
+max_concurrency: 8
+temperature: 1.0
+canvas: {width: 1024, height: 1024}
+model_params:
+  gpt-6-luna: &noreason {max_tokens: null, max_completion_tokens: 16, top_logprobs: 5, reasoning_effort: none}
+  gpt-6.1-terra: *noreason
+  gpt-6-sol: *noreason
