@@ -6,8 +6,6 @@ Code, stimuli and summary results for our Apart Research AI x Epistemics sprint 
 
 **Summary.** We put a small, task-irrelevant symbol in the corner of an image that shows a political statement. The symbol is a party logo, a flag or an approval cue such as a thumbs-down. The text prompt never mentions the symbol; it only asks the model for its own view on a 5-point scale. We read the expected agreement from the answer token's logprobs and compare each symbol with no symbol, a grey box and a pixel-scrambled copy of the same symbol, across OpenAI and xAI vision-language models.
 
-**Paper:** [PAPER LINK]
-
 ## Headline results
 
 - **Party logos move older models toward the party, and the effect is gone from gpt-5.1 on.** In gpt-4.1-mini and gpt-4.1, the Democrat logo against the Republican logo moves answers toward that party's side by 0.7–0.9 points on the 1–5 scale: D −0.88 and −0.71 in the ladder confirmation (decision rule fixed in advance, Holm p ≤ 0.039), and −0.85 and −0.69 in the pre-registered cue ladder. gpt-4.1-mini's effect was first confirmed in our pre-registered test (p = 0.015). Scrambled logos with the same colours do nothing (D +0.01, +0.08). From gpt-5.1 on, the party contrast is near zero: |D| ≤ 0.05 with a neutral option. The one hint under forced choice is gpt-5.1, at −0.26 (p = 0.065).
